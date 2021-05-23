@@ -1,0 +1,21 @@
+<h1>{{nombre}}</h1>
+
+<dl>
+    <td> Nombre:</td>
+    <dd>{{nombre}}</dd>
+
+    <td> Edad:</td>
+    <dd>{{edad}}</dd>
+
+    <td> Edad y Nombre:</td>
+    <dd>{{ obternerNombre() }}</dd>
+
+    <td> Mayúsculas:</td>
+    <dd>{{nombreMayusculas}}</dd>
+</dl>
+<button (click) = "cambiarNombre()">Cambiar Heroe</button>
+<button (click) = "cambiarEdad()">Cambiar edad</button>
+<!-- Los métodos cambiarNombre y cambiarEdad son llamados 
+desde heroe.component.ts que están definidos dentro de la 
+    export class HeroeComponent. Esto se llama one way data
+biding -->
